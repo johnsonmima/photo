@@ -3,6 +3,7 @@
 //************************************************
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SecondaryButton extends StatelessWidget {
   const SecondaryButton(
@@ -28,11 +29,13 @@ class SecondaryButton extends StatelessWidget {
           child: Center(
             child: Text(
               text.toUpperCase(),
-              style: TextStyle(
-                  color: Theme.of(context).colorScheme.primary,
-                  fontSize: fontSize,
+              style: GoogleFonts.roboto(
                   fontWeight: FontWeight.w900,
-                  fontFamily: 'Roboto'),
+                  textStyle: TextStyle(
+                      color: Theme.of(context).colorScheme.primary,
+                      fontSize: fontSize
+                  ),
+              ),
             ),
           ),
         ),

@@ -3,6 +3,8 @@
 //************************************************
 
 import 'package:flutter/material.dart';
+// google font
+import 'package:google_fonts/google_fonts.dart';
 
 class OutLineButton extends StatelessWidget {
   const OutLineButton(
@@ -29,11 +31,13 @@ class OutLineButton extends StatelessWidget {
             child: Center(
               child: Text(
                 text.toUpperCase(),
-                style: TextStyle(
+                style: GoogleFonts.roboto(
+                  fontWeight: FontWeight.w900,
+                  textStyle: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
-                    fontSize: fontSize,
-                    fontWeight: FontWeight.w900,
-                    fontFamily: 'Roboto'),
+                    fontSize: fontSize
+                  )
+                ),
               ),
             ),
         ),
