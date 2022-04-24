@@ -6,6 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:photo/util/constant.dart';
 // screens
 import 'package:photo/screens/on_boarding/on_boarding_screen.dart';
+// auth
+import 'package:photo/screens/auth/login_screen.dart';
+import 'package:photo/screens/auth/register_screen.dart';
+import 'package:photo/screens/auth/create_username_screen.dart';
+// home
+import 'package:photo/screens/home/home_screen.dart';
+
 
 
 class App extends StatelessWidget {
@@ -20,7 +27,12 @@ class App extends StatelessWidget {
       theme: ThemeData(colorScheme: kColorSchemeLightMode),
       initialRoute: OnBoardingScreen.routeName,
       routes: {
-        OnBoardingScreen.routeName : (context) => const OnBoardingScreen()
+        OnBoardingScreen.routeName : (context) => const OnBoardingScreen(),
+        LoginScreen.routeName: (context) => const LoginScreen(),
+        RegisterScreen.routeName:(context) => const RegisterScreen(),
+        CreateUserNameScreen.routeName:(context) => const
+        CreateUserNameScreen(),
+        HomeScreen.routeName : (context) => const HomeScreen(),
       },
     );
   }
