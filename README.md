@@ -1,4 +1,4 @@
 # photo
 
-##Run
-    flutter pub get
+## Run
+    `flutter pub get`
