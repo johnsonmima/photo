@@ -1,4 +1,4 @@
 # photo
 
 ## Run
-    `flutter pub get`
+    flutter pub get
